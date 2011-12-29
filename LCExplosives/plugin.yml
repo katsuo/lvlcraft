@@ -1,0 +1,6 @@
+name: LCExplosives
+main: me.samkio.lcexplosives.LCExplosives
+version: 0.1
+description: >
+             LCExplosives. The Explosive Level for LevelCraftCore.
+commands:

@@ -1,0 +1,7 @@
+name: LCTheiving
+main: me.samkio.lctheiving.LCTheiving
+version: 0.1
+description: >
+             LCTheiving. The theiving Level for LevelCraftCore.
+commands:
+

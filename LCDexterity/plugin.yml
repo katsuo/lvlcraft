@@ -1,0 +1,7 @@
+name: LCDexterity
+main: me.samkio.lcdexterity.LCDexterity
+version: 0.1.4
+description: >
+             LCDexterity. The Dexterity Level for LevelCraftCore.
+commands:
+

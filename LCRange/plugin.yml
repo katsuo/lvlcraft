@@ -1,0 +1,7 @@
+name: LCRange
+main: me.samkio.lcrange.LCRange
+version: 0.2.2
+description: >
+             LCRange. The ranging Level for LevelCraftCore.
+commands:
+

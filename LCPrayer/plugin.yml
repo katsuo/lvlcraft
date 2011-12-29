@@ -1,0 +1,6 @@
+name: LCPrayer
+main: me.l5d.lcprayer.LCPrayer
+version: 0.5
+description: >
+             LCPrayer. The Prayer Level for LevelCraftCore.
+commands:

@@ -1,0 +1,6 @@
+name: LCHealth
+main: me.torrent.lchealth.LCHealth
+version: 0.1
+description: >
+             LCExplosives. The Explosive Level for LevelCraftCore.
+commands:

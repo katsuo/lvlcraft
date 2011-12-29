@@ -1,0 +1,6 @@
+name: LCTemplate
+main: me.samkio.lctemplate.LCTemplate
+version: 0.1
+description: >
+             LCTemplate. The x Level for LevelCraftCore.
+commands:

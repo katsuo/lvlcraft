@@ -1,0 +1,6 @@
+name: LCMining
+main: me.samkio.lcmining.LCMining
+version: 0.1
+description: >
+             LCMining. The mining Level for LevelCraftCore.
+commands:
