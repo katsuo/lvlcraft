@@ -1,6 +1,6 @@
 name: LCMedicine
 main: me.samkio.lcmedicine.LCMedicine
-version: 0.1
+version: 0.2
 description: >
              LCMedicine. The Medicine Level for LevelCraftCore.
 commands:

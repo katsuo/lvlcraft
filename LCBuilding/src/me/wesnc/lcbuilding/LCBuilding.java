@@ -25,7 +25,8 @@ public class LCBuilding extends JavaPlugin
     this.logger.log(Level.INFO, "[LC] Level Building unloaded");
   }
 
-  public void onEnable()
+  @SuppressWarnings("deprecation")
+public void onEnable()
   {
     new File("plugins/LevelCraftCore/Configs").mkdirs();
     try

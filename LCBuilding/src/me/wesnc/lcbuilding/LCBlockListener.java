@@ -105,6 +105,9 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
+    if (m == Material.COBBLESTONE) {
+      gained = this.plugin.LCConfiguration.PLACED_COBBLESTONE;
+    }
     if (m == Material.DIRT) {
       gained = this.plugin.LCConfiguration.PLACED_DIRT_NONGRASSED;
     }
