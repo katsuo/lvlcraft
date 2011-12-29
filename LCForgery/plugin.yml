@@ -1,6 +1,6 @@
 name: LCForgery
 main: me.samkio.lcforgery.LCForgery
-version: 0.1.3
+version: 0.1.4
 description: >
              LCForgery. The Forgery Level for LevelCraftCore.
 commands:
