@@ -6,11 +6,12 @@ import me.samkio.levelcraftcore.LCChat;
 import me.samkio.levelcraftcore.LevelFunctions;
 import net.minecraft.server.ContainerFurnace;
 import net.minecraft.server.EntityPlayer;
-import net.minecraft.server.InventoryPlayer;
+import net.minecraft.server.PlayerInventory;;
 import net.minecraft.server.ItemStack;
 import net.minecraft.server.TileEntityFurnace;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.entity.Player;
+import org.bukkit.event.inventory.InventoryListener;
 
 public class FurnaceWorkThread implements Runnable {
 	private CraftPlayer craftPlayer;
@@ -18,7 +19,7 @@ public class FurnaceWorkThread implements Runnable {
 	private LCForgery plugin;
 	private int id;
 	private int level;
-	private InventoryPlayer inventory;
+	private PlayerInventory inventory;
 
 	public FurnaceWorkThread(Player p, LCForgery plugin,int level) {
 		this.craftPlayer = (CraftPlayer) p;
@@ -330,7 +331,7 @@ public class FurnaceWorkThread implements Runnable {
 		
 		
 	
-		ItemStack[] Current = {Furnace[0],Furnace[1],Furnace[2], inventory.j()};
+		ItemStack[] Current = {Furnace[0],Furnace[1],Furnace[2], InventoryListener()};
 		plugin.playerListener.previousResult.put(id, Current);
 	
 		if (!craftPlayer.isOnline())
@@ -338,6 +339,11 @@ public class FurnaceWorkThread implements Runnable {
 	}
 
 	
+	private ItemStack InventoryListener() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 	public void kill() {
 		plugin.getServer().getScheduler().cancelTask(id);
 		plugin.playerListener.previousResult.remove(id);
@@ -348,9 +354,9 @@ public class FurnaceWorkThread implements Runnable {
 	}
 	public void resetIngredient(CraftPlayer p,TileEntityFurnace t,ItemStack F){
 		if(p.getInventory().firstEmpty()==-1){
-	        p.getWorld().dropItem(p.getLocation(),new org.bukkit.inventory.ItemStack(F.id, F.count, (short) F.damage));
+	        p.getWorld().dropItem(p.getLocation(),new org.bukkit.inventory.ItemStack(F.id, F.count));
 		}else{
-		p.getInventory().setItem(p.getInventory().firstEmpty(),(org.bukkit.inventory.ItemStack) new org.bukkit.inventory.ItemStack(F.id,F.count,(short) F.damage));
+		p.getInventory().setItem(p.getInventory().firstEmpty(),(org.bukkit.inventory.ItemStack) new org.bukkit.inventory.ItemStack(F.id,F.count));
 		}
 		t.setItem(0, null);
 		return;

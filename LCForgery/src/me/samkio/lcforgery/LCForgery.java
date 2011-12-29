@@ -30,6 +30,7 @@ public class LCForgery extends JavaPlugin {
 
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public void onEnable() {
 		new File("plugins/LevelCraftCore/Configs/").mkdirs();
