@@ -6,7 +6,7 @@ import me.samkio.levelcraftcore.LCChat;
 import me.samkio.levelcraftcore.LevelFunctions;
 import net.minecraft.server.ContainerFurnace;
 import net.minecraft.server.EntityPlayer;
-import net.minecraft.server.PlayerInventory;;
+import net.minecraft.server.PlayerInventory;
 import net.minecraft.server.ItemStack;
 import net.minecraft.server.TileEntityFurnace;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
