@@ -25,6 +25,7 @@ import org.bukkit.util.config.Configuration;
 
 import com.nijiko.permissions.PermissionHandler;
 
+@SuppressWarnings("deprecation")
 public class LevelCraftCore extends JavaPlugin {
 	public final Logger logger = Logger.getLogger("Minecraft");
 	public final FlatFile FlatFile = new FlatFile(this);

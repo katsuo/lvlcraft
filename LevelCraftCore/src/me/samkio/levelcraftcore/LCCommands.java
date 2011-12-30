@@ -8,6 +8,7 @@ import org.bukkit.plugin.Plugin;
 import org.getspout.spoutapi.SpoutManager;
 import org.getspout.spoutapi.player.AppearanceManager;
 
+@SuppressWarnings("deprecation")
 public class LCCommands {
 	public LevelCraftCore plugin;
 

@@ -1,7 +1,7 @@
 name: LevelCraftCore
 
 main: me.samkio.levelcraftcore.LevelCraftCore
-version: 0.1.7.2
+version: 0.1.7.3
 description: >
              Commands for use with the Levelcraft experience-based plugin for Minecraft.
 
