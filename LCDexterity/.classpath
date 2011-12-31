@@ -2,8 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
-	<classpathentry kind="lib" path="C:/Users/Sam/Desktop/EXTERNAL/bukkit-0.0.1-SNAPSHOT(2).jar"/>
-	<classpathentry kind="lib" path="C:/Users/Sam/Desktop/EXTERNAL/craftbukkit-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/richard/Documents/Levelcraft/extjar/bukkit-1-1.0.1-R2-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="/Users/richard/Documents/Levelcraft/extjar/craftbukkit-1-1.0.1-R1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sam/Desktop/LevelCraftCORE/plugins/LevelCraft.jar"/>
+	<classpathentry kind="lib" path="/Users/richard/Documents/Levelcraft/extjar/LevelCraft.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
