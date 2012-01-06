@@ -31,9 +31,11 @@ public class LCBlockListener extends BlockListener
     int level = LevelFunctions.getLevel(player, this.plugin.thisPlug);
 
     Block b = event.getBlock();
+    byte halfblock_stonebrick = 5;
+    byte halfblock_brick = 4;
     byte halfblock_cob = 3;
     byte halfblock_wood = 2;
-    byte halfblock_sandstone = 1;
+    byte halfblock_sands = 1;
     byte halfblock_slab = 0;
 
     if (!Whitelist.hasLevel(player, this.plugin.thisPlug)) {
@@ -42,7 +44,7 @@ public class LCBlockListener extends BlockListener
     double gained = 0.0D;
 
     if (level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1 && ((m == Material.STONE) || (m == Material.FURNACE) || (m == Material.WOODEN_DOOR) || (m == Material.CACTUS) || (m == Material.LADDER) || (m == Material.FENCE) || (m == Material.FENCE_GATE)
-    		|| (m == Material.TRAP_DOOR) || (m == Material.CLAY) || (m == Material.BED) || (m == Material.CAKE) || (m == Material.FENCE_GATE)))
+    		|| (m == Material.TRAP_DOOR) || (m == Material.CLAY) || (m == Material.BED) || (m == Material.CAKE) || (m == Material.FENCE_GATE) || (m == Material.BED_BLOCK) || (m == Material.CAKE_BLOCK)))
     {
     
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1_MESSAGE);
@@ -57,7 +59,8 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if (level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2 && ((m == Material.SANDSTONE) || (m == Material.FURNACE) || (m == Material.SNOW_BLOCK) || (m == Material.PUMPKIN)))
+    if (level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2 && ((m == Material.SANDSTONE) || (m == Material.SNOW_BLOCK) || (m == Material.PUMPKIN) || (m == Material.SNOW_BLOCK) || (m == Material.PUMPKIN) || (m == Material.SMOOTH_BRICK)
+    		 || (m == Material.MELON_BLOCK) || (m == Material.JACK_O_LANTERN) || (m == Material.BREWING_STAND) || (m == Material.CAULDRON)))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2_MESSAGE);
       event.setCancelled(true);
@@ -71,14 +74,15 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2point5) && (m == Material.WOOL))
+    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2point5) && (m == Material.WOOL) || (m == Material.IRON_DOOR_BLOCK) || (m == Material.MOSSY_COBBLESTONE) || (m == Material.IRON_FENCE) || (m == Material.LEAVES)
+    		|| (m == Material.LEVER) || (m == Material.STONE_BUTTON) || (m == Material.STONE_PLATE) || (m == Material.WOOD_PLATE) || (m == Material.BROWN_MUSHROOM) || (m == Material.RED_MUSHROOM))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2point5_MESSAGE);
       event.setCancelled(true);
       return;
     }
 
-    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2point5) && (b.getType() == Material.STEP) && (b.getData() == halfblock_sandstone))
+    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2point5) && (b.getType() == Material.STEP) && (b.getData() == halfblock_sands) || (b.getType() == Material.STEP) && (b.getData() == halfblock_stonebrick) || (b.getType() == Material.STEP) && (b.getData() == halfblock_brick))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2point5_MESSAGE);
       event.setCancelled(true);
