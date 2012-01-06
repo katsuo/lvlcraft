@@ -41,7 +41,8 @@ public class LCBlockListener extends BlockListener
     }
     double gained = 0.0D;
 
-    if (level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1 && ((m == Material.STONE) || (m == Material.FURNACE)))
+    if (level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1 && ((m == Material.STONE) || (m == Material.FURNACE) || (m == Material.WOOD_DOOR) || (m == Material.CACTUS) || (m == Material.LADDER) || (m == Material.FENCE) || (m == Material.FENCE_GATE)
+    		|| (m == Material.TRAP_DOOR) || (m == Material.CLAY) || (m == Material.BED) || (m == Material.CAKE)))
     {
     
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1_MESSAGE);
