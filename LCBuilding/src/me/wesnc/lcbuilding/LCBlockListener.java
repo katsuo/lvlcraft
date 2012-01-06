@@ -98,7 +98,9 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER4) && (m == Material.GOLD_BLOCK) && (m == Material.DIAMOND_BLOCK) && (m == Material.IRON_BLOCK) && (m == Material.IRON_ORE) && (m == Material.GOLD_ORE))
+    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER4) && (m == Material.GOLD_BLOCK) || (m == Material.DIAMOND_BLOCK) || (m == Material.IRON_BLOCK) || (m == Material.IRON_ORE) && (m == Material.GOLD_ORE)
+    		|| (m == Material.LAPIS_BLOCK) || (m == Material.getMaterial(29)) || (m == Material.getMaterial(33)) || (m == Material.RAILS) || (m == Material.DETECTOR_RAIL) || (m == Material.POWERED_RAIL) || (m == Material.REDSTONE_TORCH_ON)
+    		|| (m == Material.REDSTONE_WIRE) || (m == Material.DIODE_BLOCK_OFF))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER4_MESSAGE);
       event.setCancelled(true);
