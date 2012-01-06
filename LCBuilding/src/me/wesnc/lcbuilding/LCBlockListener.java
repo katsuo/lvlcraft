@@ -107,7 +107,8 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER5) && (m == Material.OBSIDIAN) && (m == Material.NETHERRACK) && (m == Material.SOUL_SAND) && (m == Material.GLOWSTONE))
+    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER5) && (m == Material.OBSIDIAN) || (m == Material.NETHERRACK) || (m == Material.getMaterial(88)) || (m == Material.getMaterial(89)) || (m == Material.NETHER_FENCE) || (m == Material.NETHER_BRICK_STAIRS)
+    		|| (m == Material.NETHER_BRICK) || (m == Material.ENCHANTMENT_TABLE) || (m == Material.TNT) || (m == Material.ENDER_PORTAL_FRAME))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER5_MESSAGE);
       event.setCancelled(true);
