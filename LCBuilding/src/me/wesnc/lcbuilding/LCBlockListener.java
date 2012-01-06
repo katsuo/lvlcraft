@@ -89,7 +89,9 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if (((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3) && (m == Material.GLASS)) || (m == Material.BOOKSHELF) || (m == Material.BRICK) || (m == Material.WOOD_STAIRS) || (m == Material.COBBLESTONE_STAIRS))
+    if (((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3) && (m == Material.GLASS)) || (m == Material.BOOKSHELF) || (m == Material.BRICK) || (m == Material.WOOD_STAIRS) || (m == Material.COBBLESTONE_STAIRS) 
+    		|| (m == Material.getMaterial(102) || (m == Material.JUKEBOX) || (m == Material.NOTE_BLOCK) || (m == Material.getMaterial(108)) || (m == Material.DISPENSER) || (m == Material.SUGAR_CANE_BLOCK) || (m == Material.getMaterial(111))
+    		|| (m == Material.RED_ROSE) || (m == Material.YELLOW_FLOWER)) || (m == Material.VINE) || (m == Material.WEB))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3_MESSAGE);
       event.setCancelled(true);
