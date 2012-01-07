@@ -55,14 +55,31 @@ public class LCConfiguration
 
   double PLACED_LADDER = 4.0D;
   double PLACED_WOOL = 2.0D;
-
+  //nouveau item
+  double PLACED_FENCE = 3.0D;
+  double PLACED_FENCE_GATE = 4.0D;
+  double PLACED_TRAP = 4.0D;
+  double PLACED_SMOOTH_BRICK = 2.0D;
+  double PLACED_GLASS_PANEL = 4.0D;
+  double PLACED_LAPIS_BLOCK = 5.0D;
+  double PLACED_PISTON = 2.0D;
+  double PLACED_STICKY_PISTON = 3.0D;
+  double PLACED_RAILS = 2.0D;
+  double PLACED_BOOSTER_RAIL = 3.0D;
+  double PLACED_DETECTOR_RAIL = 4.0D;
+  double PLACED_NETHER_FENCE = 3.0D;
+  double PLACED_NETHER_BRICK = 2.0D;
+  
+  
+  
+  
   int LEVELNEEDEDFOR_TIER0 = 1;
-  int LEVELNEEDEDFOR_TIER1 = 5;
-  int LEVELNEEDEDFOR_TIER2 = 10;
-  int LEVELNEEDEDFOR_TIER2point5 = 13;
-  int LEVELNEEDEDFOR_TIER3 = 20;
-  int LEVELNEEDEDFOR_TIER4 = 30;
-  int LEVELNEEDEDFOR_TIER5 = 40;
+  int LEVELNEEDEDFOR_TIER1 = 10;
+  int LEVELNEEDEDFOR_TIER2 = 20;
+  int LEVELNEEDEDFOR_TIER2point5 = 26;
+  int LEVELNEEDEDFOR_TIER3 = 40;
+  int LEVELNEEDEDFOR_TIER4 = 60;
+  int LEVELNEEDEDFOR_TIER5 = 80;
 
   final String LEVELNEEDEDFOR_TIER1_MESSAGE = "Cannot place this block, Level needed " + this.LEVELNEEDEDFOR_TIER1 + ". That item is Tier 1.";
   final String LEVELNEEDEDFOR_TIER2_MESSAGE = "Cannot place this block, Level needed " + this.LEVELNEEDEDFOR_TIER2 + ". That item is Tier 2.";
@@ -133,5 +150,8 @@ public class LCConfiguration
     this.PLACED_LADDER = properties.getDouble("PLACED_LADDER", 4.0D);
 
     this.PLACED_WOOL = properties.getDouble("PLACED_WOOL", 3.0D);
+    //nouveau item
+    this.PLACED_FENCE = properties.getDouble("PLACED_FENCE", 3.0D);
+    this.PLACED_FENCE_GATE = properties.getDouble("PLACED_FENCE_GATE", 4.0);
   }
 }
