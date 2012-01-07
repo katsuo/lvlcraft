@@ -117,6 +117,42 @@ public class LCBlockListener extends BlockListener
     if (m == Material.FENCE) {
     	gained = this.plugin.LCConfiguration.PLACED_FENCE;
     }
+    if (m == Material.FENCE_GATE) {
+    	gained = this.plugin.LCConfiguration.PLACED_FENCE_GATE;
+    }
+    if (m == Material.TRAP_DOOR) {
+    	gained = this.plugin.LCConfiguration.PLACED_TRAP;
+    }
+    if (m == Material.SMOOTH_BRICK) {
+    	gained = this.plugin.LCConfiguration.PLACED_SMOOTH_BRICK;
+    }
+    if (m == Material.getMaterial(102)) {
+    	gained = this.plugin.LCConfiguration.PLACED_GLASS_PANEL;
+    }
+    if (m == Material.LAPIS_BLOCK) {
+    	gained = this.plugin.LCConfiguration.PLACED_LAPIS_BLOCK;
+    }
+    if (m == Material.getMaterial(88)) {
+    	gained = this.plugin.LCConfiguration.PLACED_PISTON;
+    }
+    if (m == Material.getMaterial(89)) {
+    	gained = this.plugin.LCConfiguration.PLACED_STICKY_PISTON;
+    }
+    if (m == Material.RAILS) {
+    	gained = this.plugin.LCConfiguration.PLACED_RAILS;
+    }
+    if (m == Material.POWERED_RAIL) {
+    	gained = this.plugin.LCConfiguration.PLACED_BOOSTER_RAIL;
+    }
+    if (m == Material.DETECTOR_RAIL) {
+    	gained = this.plugin.LCConfiguration.PLACED_DETECTOR_RAIL;
+    }
+    if (m == Material.NETHER_FENCE) {
+    	gained = this.plugin.LCConfiguration.PLACED_NETHER_FENCE;
+    }
+    if (m == Material.NETHER_BRICK) {
+    	gained = this.plugin.LCConfiguration.PLACED_NETHER_BRICK;
+    }
     if (m == Material.COBBLESTONE) {
       gained = this.plugin.LCConfiguration.PLACED_COBBLESTONE;
     }
