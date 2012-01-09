@@ -12,7 +12,7 @@ public class LCConfiguration
 
   double PLACED_STONE = 2.0D;
   double PLACED_COBBLESTONE = 2.0D;
-  double PLACED_COBBLESTONE_MOSSY = 2.0D;
+  double PLACED_MOSSY_COBBLESTONE = 2.0D;
 
   double PLACED_STAIRS = 2.0D;
 
@@ -55,30 +55,31 @@ public class LCConfiguration
 
   double PLACED_LADDER = 4.0D;
   double PLACED_WOOL = 2.0D;
-  //nouveau item
+  
   double PLACED_FENCE = 3.0D;
   double PLACED_FENCE_GATE = 4.0D;
   double PLACED_TRAP = 4.0D;
+  
   double PLACED_SMOOTH_BRICK = 2.0D;
   double PLACED_GLASS_PANEL = 4.0D;
   double PLACED_LAPIS_BLOCK = 5.0D;
+  
   double PLACED_PISTON = 2.0D;
   double PLACED_STICKY_PISTON = 3.0D;
   double PLACED_RAILS = 2.0D;
+  
   double PLACED_BOOSTER_RAIL = 3.0D;
   double PLACED_DETECTOR_RAIL = 4.0D;
+  
   double PLACED_NETHER_FENCE = 3.0D;
   double PLACED_NETHER_BRICK = 2.0D;
-  
-  
-  
   
   int LEVELNEEDEDFOR_TIER0 = 1;
   int LEVELNEEDEDFOR_TIER1 = 10;
   int LEVELNEEDEDFOR_TIER2 = 20;
   int LEVELNEEDEDFOR_TIER2point5 = 26;
   int LEVELNEEDEDFOR_TIER3 = 40;
-  int LEVELNEEDEDFOR_TIER4 = 60;
+  int LEVELNEEDEDFOR_TIER4 = 61;
   int LEVELNEEDEDFOR_TIER5 = 80;
 
   final String LEVELNEEDEDFOR_TIER1_MESSAGE = "Cannot place this block, Level needed " + this.LEVELNEEDEDFOR_TIER1 + ". That item is Tier 1.";
@@ -106,7 +107,7 @@ public class LCConfiguration
 
     this.PLACED_STONE = properties.getDouble("PLACED_STONE", 2.0D);
     this.PLACED_COBBLESTONE = properties.getDouble("PLACED_COBBLESTONE", 2.0D);
-    this.PLACED_COBBLESTONE_MOSSY = properties.getDouble("PLACED_COBBLESTONE_MOSSY", 2.0D);
+    this.PLACED_MOSSY_COBBLESTONE = properties.getDouble("PLACED_MOSSY_COBBLESTONE", 2.0D);
 
     this.PLACED_STAIRS = properties.getDouble("PLACED_STAIRS", 2.0D);
 
@@ -150,8 +151,23 @@ public class LCConfiguration
     this.PLACED_LADDER = properties.getDouble("PLACED_LADDER", 4.0D);
 
     this.PLACED_WOOL = properties.getDouble("PLACED_WOOL", 3.0D);
-    //nouveau item
+    
     this.PLACED_FENCE = properties.getDouble("PLACED_FENCE", 3.0D);
-    this.PLACED_FENCE_GATE = properties.getDouble("PLACED_FENCE_GATE", 4.0);
+    this.PLACED_FENCE_GATE = properties.getDouble("PLACED_FENCE_GATE", 4.0D);
+    this.PLACED_TRAP = properties.getDouble("PLACED_TRAP", 4.0D);
+    
+    this.PLACED_SMOOTH_BRICK = properties.getDouble("PLACED_SMOOTH_BRICK", 2.0D);
+    this.PLACED_GLASS_PANEL = properties.getDouble("PLACED_GLASS_PANEL", 4.0D);
+    this.PLACED_LAPIS_BLOCK = properties.getDouble("PLACED_LAPIS_BLOCK", 5.0D);
+    
+    this.PLACED_PISTON = properties.getDouble("PLACED_PISTON", 2.0D);
+    this.PLACED_STICKY_PISTON = properties.getDouble("PLACED_STICKY_PISTON", 3.0D);
+    this.PLACED_RAILS = properties.getDouble("PLACED_RAILS", 2.0D);
+    
+    this.PLACED_BOOSTER_RAIL = properties.getDouble("PLACED_BOOSTER_RAIL", 3.0D);
+    this.PLACED_DETECTOR_RAIL = properties.getDouble("PLACED_DETECTOR_RAIL", 4.0D);
+    
+    this.PLACED_NETHER_FENCE = properties.getDouble("PLACED_NETHER_FENCE", 3.0D);
+    this.PLACED_NETHER_BRICK = properties.getDouble("PLACED_NETHER_BRICK", 2.0D);
   }
 }
