@@ -99,7 +99,7 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3) && ((m == Material.GLASS) || (m == Material.BOOKSHELF) || (m == Material.BRICK) || (m == Material.WOOD_STAIRS) || (m == Material.COBBLESTONE_STAIRS) 
+    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3) && ((m == Material.GLASS) || (m == Material.getMaterial(321)) || (m == Material.BOOKSHELF) || (m == Material.BRICK) || (m == Material.WOOD_STAIRS) || (m == Material.COBBLESTONE_STAIRS) 
     		|| (m == Material.getMaterial(102) || (m == Material.JUKEBOX) || (m == Material.NOTE_BLOCK) || (m == Material.getMaterial(108)) || (m == Material.DISPENSER) || (m == Material.SUGAR_CANE_BLOCK) 
     		|| (m == Material.getMaterial(111))
     		|| (m == Material.RED_ROSE) || (m == Material.YELLOW_FLOWER)) || (m == Material.VINE) || (m == Material.WEB) || (m == Material.RAILS) 
@@ -245,6 +245,105 @@ public class LCBlockListener extends BlockListener
     }
     if (m == Material.FURNACE) {
         gained = this.plugin.LCConfiguration.PLACED_FURNACE;
+    }
+    if (m == Material.TORCH) {
+    	gained = this.plugin.LCConfiguration.PLACED_TORCH;
+    }
+    if (m == Material.SIGN) {
+    	gained = this.plugin.LCConfiguration.PLACED_SIGN;
+    }
+    if (m == Material.SAPLING) {
+    	gained = this.plugin.LCConfiguration.PLACED_TREE_SEED;
+    }
+    if (m == Material.WOODEN_DOOR) {
+    	gained = this.plugin.LCConfiguration.PLACED_WOOD_DOOR;
+    }
+    if (m == Material.CLAY_BRICK) {
+    	gained = this.plugin.LCConfiguration.PLACED_CLAY_BLOCK;
+    }
+    if (m == Material.BED_BLOCK) {
+    	gained = this.plugin.LCConfiguration.PLACED_BED;
+    }
+    if (m == Material.CAKE_BLOCK) {
+    	gained = this.plugin.LCConfiguration.PLACED_CAKE;
+    }
+    if (m == Material.MELON_BLOCK) {
+    	gained = this.plugin.LCConfiguration.PLACED_MELON;
+    }
+    if (m == Material.BREWING_STAND) {
+    	gained = this.plugin.LCConfiguration.PLACED_BREW_STAND;
+    }
+    if (m == Material.CAULDRON) {
+    	gained = this.plugin.LCConfiguration.PLACED_CHAULDRON;
+    }
+    if (m == Material.STONE_BUTTON) {
+    	gained = this.plugin.LCConfiguration.PLACED_BOTTOM;
+    }
+    if (m == Material.IRON_FENCE) {
+    	gained = this.plugin.LCConfiguration.PLACED_METAL_FENCE;
+    }
+    if (m == Material.LEAVES) {
+    	gained = this.plugin.LCConfiguration.PLACED_LEAF;
+    }
+    if (m == Material.LEVER) {
+    	gained = this.plugin.LCConfiguration.PLACED_LEVER;
+    }
+    if (m == Material.DISPENSER) {
+    	gained = this.plugin.LCConfiguration.PLACED_DISPENSER;
+    }
+    if (m == Material.STONE_PLATE) {
+    	gained = this.plugin.LCConfiguration.PLACED_STONE_PLATE;
+    }
+    if (m == Material.WOOD_PLATE) {
+    	gained = this.plugin.LCConfiguration.PLACED_WOOD_PLATE;
+    }
+    if (m == Material.BROWN_MUSHROOM) {
+    	gained = this.plugin.LCConfiguration.PLACED_BROWN_CHAMP;
+    }
+    if (m == Material.RED_MUSHROOM) {
+    	gained = this.plugin.LCConfiguration.PLACED_RED_CHAMP;
+    }
+    if (m == Material.WEB) {
+    	gained = this.plugin.LCConfiguration.PLACED_WEB;
+    }
+    if (m == Material.NOTE_BLOCK) {
+    	gained = this.plugin.LCConfiguration.PLACED_NOTE;
+    }
+    if (m == Material.JUKEBOX) {
+    	gained = this.plugin.LCConfiguration.PLACED_JUKE;
+    }
+    if (m == Material.REDSTONE_TORCH_ON) {
+    	gained = this.plugin.LCConfiguration.PLACED_RED_TORCH;
+    }
+    if (m == Material.YELLOW_FLOWER) {
+    	gained = this.plugin.LCConfiguration.PLACED_YELLOW_FLOWER;
+    }
+    if (m == Material.RED_ROSE) {
+    	gained = this.plugin.LCConfiguration.PLACED_RED_FLOWER;
+    }
+    if (m == Material.getMaterial(111)) {
+    	gained = this.plugin.LCConfiguration.PLACED_LILY;
+    }
+    if (m == Material.VINE) {
+    	gained = this.plugin.LCConfiguration.PLACED_VINE;
+    }
+    if (m == Material.ENDER_PORTAL_FRAME) {
+    	gained = this.plugin.LCConfiguration.PLACED_END_PORTAL;
+    }
+    if (m == Material.REDSTONE_WIRE) {
+    	gained = this.plugin.LCConfiguration.PLACED_REDSTONE;
+    }
+    if (m == Material.DIODE_BLOCK_OFF) {
+    	gained = this.plugin.LCConfiguration.PLACED_DELAY;
+    }
+    if (m == Material.ENCHANTMENT_TABLE) {
+    	gained = this.plugin.LCConfiguration.PLACED_ENCHANT;
+    }
+    if (m == Material.TNT) {
+    	gained = this.plugin.LCConfiguration.PLACED_TNT;
+    }
+    if (m == Material.PAINTING) {
+    	gained = this.plugin.LCConfiguration.PLACED_PAINT;	
       }
     
 

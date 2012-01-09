@@ -74,12 +74,50 @@ public class LCConfiguration
   double PLACED_NETHER_FENCE = 3.0D;
   double PLACED_NETHER_BRICK = 2.0D;
   
+  double PLACED_TORCH = 1.0D;
+  double PLACED_SIGN = 1.0D;
+  double PLACED_TREE_SEED = 1.0D;
+  double PLACED_WOOD_DOOR = 1.0D;
+  double PLACED_CLAY_BLOCK = 1.0D;
+  double PLACED_BED = 1.0D;
+  double PLACED_CAKE = 1.0D;
+  double PLACED_MELON = 1.0D;
+  double PLACED_BREW_STAND = 1.0D;
+  double PLACED_CHAULDRON = 1.0D;
+  double PLACED_BOTTOM = 1.0D;
+  double PLACED_METAL_FENCE = 1.0D;
+  double PLACED_LEAF = 1.0D;
+  double PLACED_LEVER = 1.0D;
+  double PLACED_DISPENSER = 1.0D;
+  double PLACED_STONE_PLATE = 1.0D;
+  double PLACED_WOOD_PLATE = 1.0D;
+  double PLACED_BROWN_CHAMP = 1.0D;
+  double PLACED_RED_CHAMP = 1.0D;
+  double PLACED_CANE = 1.0D;
+  double PLACED_WEB = 1.0D;
+  double PLACED_NOTE = 1.0D;
+  double PLACED_JUKE = 1.0D;
+  double PLACED_RED_TORCH = 1.0D;
+  double PLACED_YELLOW_FLOWER = 1.0D;
+  double PLACED_RED_FLOWER =1.0D;
+  double PLACED_LILY = 1.0D;
+  double PLACED_VINE = 1.0D;
+  double PLACED_END_PORTAL = 1.0D;
+  double PLACED_REDSTONE = 1.0D;
+  double PLACED_DELAY = 1.0D;
+  double PLACED_ENCHANT = 1.0D;
+  double PLACED_TNT = 1.0;
+  double PLACED_PAINT = 1.0D;
+  
+  
+  
+  
   int LEVELNEEDEDFOR_TIER0 = 1;
   int LEVELNEEDEDFOR_TIER1 = 10;
   int LEVELNEEDEDFOR_TIER2 = 20;
   int LEVELNEEDEDFOR_TIER2point5 = 26;
   int LEVELNEEDEDFOR_TIER3 = 40;
-  int LEVELNEEDEDFOR_TIER4 = 61;
+  int LEVELNEEDEDFOR_TIER4 = 60;
   int LEVELNEEDEDFOR_TIER5 = 80;
 
   final String LEVELNEEDEDFOR_TIER1_MESSAGE = "Cannot place this block, Level needed " + this.LEVELNEEDEDFOR_TIER1 + ". That item is Tier 1.";
@@ -169,5 +207,38 @@ public class LCConfiguration
     
     this.PLACED_NETHER_FENCE = properties.getDouble("PLACED_NETHER_FENCE", 3.0D);
     this.PLACED_NETHER_BRICK = properties.getDouble("PLACED_NETHER_BRICK", 2.0D);
+    
+    this.PLACED_TORCH = properties.getDouble("PLACED_TORCH", 1.0D);
+    this.PLACED_SIGN = properties.getDouble("PLACED_SIGN", 1.0D);
+    this.PLACED_TREE_SEED = properties.getDouble("PLACED_TREE_SEED", 1.0D);
+    this.PLACED_WOOD_DOOR = properties.getDouble("PLACED_WOOD_DOOR", 1.0D);
+    this.PLACED_CLAY_BLOCK = properties.getDouble("PLACED_CLAY_BLOCK", 1.0D);
+    this.PLACED_BED = properties.getDouble("PLACED_BED", 1.0D);
+    this.PLACED_BOTTOM = properties.getDouble("PLACED_BOTTOM", 1.0D);
+    this.PLACED_METAL_FENCE = properties.getDouble("PLACED_METAL_FENCE", 1.0D);
+    this.PLACED_BOTTOM = properties.getDouble("PLACED_BOTTOM", 1.0D);
+    this.PLACED_METAL_FENCE = properties.getDouble("PLACED_METAL_FENCE", 1.0D);
+    this.PLACED_LEAF = properties.getDouble("PLACED_LEAF", 1.0D);
+    this.PLACED_LEVER = properties.getDouble("PLACED_LEVER", 1.0D);
+    this.PLACED_DISPENSER = properties.getDouble("PLACED_DISPENSER", 1.0D);
+    this.PLACED_STONE_PLATE = properties.getDouble("PLACED_STONE_PLATE", 1.0D);
+    this.PLACED_RED_CHAMP = properties.getDouble("PLACED_RED_CHAMP", 1.0D);
+    this.PLACED_CANE = properties.getDouble("PLACED_CANE", 1.0D);
+    this.PLACED_WEB = properties.getDouble("PLACED_BROWN_CHAMP", 1.0D);
+    this.PLACED_NOTE = properties.getDouble("PLACED_NOTE", 1.0D);
+    this.PLACED_JUKE = properties.getDouble("PLACED_JUKE", 1.0D);
+    this.PLACED_RED_TORCH = properties.getDouble("PLACED_RED_TORCH", 1.0D);
+    this.PLACED_YELLOW_FLOWER = properties.getDouble("PLACED_YELLOW_FLOWER", 1.0D);
+    this.PLACED_RED_FLOWER = properties.getDouble("PLACED_RED_FLOWER", 1.0D);
+    this.PLACED_LILY = properties.getDouble("PLACED_LILY", 1.0D);
+    this.PLACED_VINE = properties.getDouble("PLACED_VINE", 1.0D);
+    this.PLACED_END_PORTAL = properties.getDouble("PLACED_END_PORTAL", 1.0D);
+    this.PLACED_REDSTONE = properties.getDouble("PLACED_REDSTONE", 1.0D);
+    this.PLACED_DELAY = properties.getDouble("PLACED_DELAY", 1.0D);
+    this.PLACED_ENCHANT = properties.getDouble("PLACED_ENCHANT", 1.0D);
+    this.PLACED_TNT = properties.getDouble("PLACED_TNT", 1.0D);
+    this.PLACED_PAINT = properties.getDouble("PLACED_PAINt", 1.0D);
+    
+    
   }
 }
