@@ -43,7 +43,7 @@ public class LCBlockListener extends BlockListener
     }
     double gained = 0.0D;
 
-    if (((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1 && ((m == Material.STONE) || (m == Material.FURNACE) || (m == Material.WOODEN_DOOR) || (m == Material.CACTUS) || (m == Material.LADDER) 
+    if (((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER1 && ((m == Material.STONE) || (m == Material.FURNACE) || (m == Material.WOODEN_DOOR) || (m == Material.CACTUS) || (m == Material.LADDER) || (m == Material.SUGAR_CANE_BLOCK)
     		|| (m == Material.FENCE) || (m == Material.FENCE_GATE)
     		|| (m == Material.TRAP_DOOR) || (m == Material.CLAY) || (m == Material.CAKE) || (m == Material.FENCE_GATE) || (m == Material.BED_BLOCK) || (m == Material.HUGE_MUSHROOM_1) || (m == Material.CAKE_BLOCK)))))
     {
@@ -67,7 +67,7 @@ public class LCBlockListener extends BlockListener
     }
 
     if (level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2 && ((m == Material.SANDSTONE) || (m == Material.SNOW_BLOCK) || (m == Material.PUMPKIN) || (m == Material.SMOOTH_BRICK)
-    		 || (m == Material.MELON_BLOCK) || (m == Material.JACK_O_LANTERN) || (m == Material.BREWING_STAND) || (m == Material.CAULDRON)))
+    		 || (m == Material.MELON_BLOCK) || (m == Material.WOOD_STAIRS) || (m == Material.COBBLESTONE_STAIRS) || (m == Material.JACK_O_LANTERN) || (m == Material.BREWING_STAND) || (m == Material.CAULDRON)))
     {
       LCChat.warn(player, this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER2_MESSAGE);
       event.setCancelled(true);
@@ -99,8 +99,8 @@ public class LCBlockListener extends BlockListener
       return;
     }
 
-    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3) && ((m == Material.GLASS) || (m == Material.getMaterial(321)) || (m == Material.BOOKSHELF) || (m == Material.BRICK) || (m == Material.WOOD_STAIRS) || (m == Material.COBBLESTONE_STAIRS) 
-    		|| (m == Material.getMaterial(102) || (m == Material.JUKEBOX) || (m == Material.NOTE_BLOCK) || (m == Material.getMaterial(108)) || (m == Material.DISPENSER) || (m == Material.SUGAR_CANE_BLOCK) 
+    if ((level < this.plugin.LCConfiguration.LEVELNEEDEDFOR_TIER3) && ((m == Material.GLASS) || (m == Material.getMaterial(321)) || (m == Material.BOOKSHELF) || (m == Material.BRICK)
+    		|| (m == Material.getMaterial(102) || (m == Material.JUKEBOX) || (m == Material.NOTE_BLOCK) || (m == Material.getMaterial(108)) || (m == Material.DISPENSER)  
     		|| (m == Material.getMaterial(111))
     		|| (m == Material.RED_ROSE) || (m == Material.YELLOW_FLOWER)) || (m == Material.VINE) || (m == Material.WEB) || (m == Material.RAILS) 
     		|| (m == Material.SMOOTH_STAIRS) || (m == Material.getMaterial(328))))
